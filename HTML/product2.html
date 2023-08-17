@@ -1,0 +1,889 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>ShopMeow</title>
+        <link rel="stylesheet" href="../CSS/home.css"/>
+        <link rel="stylesheet" href="../CSS/product.css">
+        <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    />
+    <!-- boostrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"></script>
+
+    <!-- fontawesome -->
+    <link
+      href="https://use.fontawesome.com/releases/v6.1.1/css/all.css"
+      rel="stylesheet"
+    />
+    <!-- Dùng cho dropdown -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- carosel -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+      </head>
+<body>
+    <!--phần header -->
+    <header class="container-fluid">
+      <div class="container" style="height: 60px;">
+        <div
+          class="headbar d-flex py-2 justify-content-between align-items-center" style="height: 100%;"
+        >
+          <a href="home2.html" class="logo mr-1" style="height: 100%;">
+            <img src="../IMG/logo.jpg" alt="" class=" d-none d-sm-block" style="height: 100%;"/>
+          </a>
+          <div
+            class="search-bar d-flex bg-light justify-content-between align-items-center"
+          >
+            <input
+              type="text"
+              placeholder="Tìm kiếm trên ShopMeow"
+              class="p-2"
+            />
+            <div class="search-button p-1 w-sm-100%">
+              <div class="d-none d-sm-block d-lg-block btn btn-success">
+                <span class="d-none d-md-none d-lg-block">Tìm kiếm</span>
+                <span class="d-none d-sm-block d-lg-none"
+                  ><i class="fa-solid fa-magnifying-glass"></i
+                ></span>
+              </div>
+            </div>
+          </div>
+          <div class="nav d-md-flex">
+            <a href="post.html">
+              <div class="d-none d-md-block p-2">
+                <i class="far fa-edit px-2"></i>
+                <a href="post.html" class="d-none d-lg-inline-block">Đăng tin</a>
+              </div>
+            </a>
+            <a href="./thongBao.html" class="p-2">
+              <i class="far fa-bell pl-2" value="8"></i>
+              <span class="d-none d-lg-inline-block">Thông báo</span>
+            </a>
+            <div class="dropdown">
+              <div data-toggle="dropdown" class="d-none d-md-block p-2">
+                <i class="far fa-user"></i>
+                <span class="d-none d-lg-inline-block" style="cursor:default">Tài khoản</span>
+              </div>
+
+              <div class="dropdown-menu dropdown-menu-right">
+                <a href="./profile.html" class="dropdown-item">
+                  <i class="far fa-user p-2"></i>
+                  <span class="ml-2">Cá nhân</span>
+                </a>
+                <a href="/" class="dropdown-item">
+                  <i class="fas fa-exchange-alt p-2"></i>
+                  <span class="ml-2">Đổi mật khẩu</span>
+                </a>
+                <a href="" class="dropdown-item">
+                  <i class="fa-solid fa-arrow-right-from-bracket p-2"></i>
+                  <span class="ml-2">Đăng xuất</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="navbar py-0 position-sm-relative">
+      <ul id="navbar" class="nav d-none d-md-flex container">
+        <li class="nav-item">
+          <div class="nav-link" href="">
+            <div class="dropdown">
+              <span data-toggle="dropdown" class="font-weight-bold">Giống mèo</span>
+              <i class="fa-solid fa-caret-down"></i>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="./meobatu.html"
+                  >Mèo Ba Tư (Persian Longhair)</a
+                >
+                <a class="dropdown-item" href="./meoanhlongngan.html">Mèo Anh lông ngắn</a>
+                <a class="dropdown-item" href="./meoanhlongdai.html">Mèo Anh lông dài</a>
+                <a class="dropdown-item" href="./meomunchkin.html">Mèo Mucnhkin</a>
+                <a class="dropdown-item" href="./meoScottish.html">Mèo Scottish tai cụp</a>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="nav-item">
+          <div class="nav-link" href="">
+            <div class="dropdown">
+              <span data-toggle="dropdown" class="font-weight-bold">Vật dụng</span>
+              <i class="fa-solid fa-caret-down"></i>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="./giuongNguChoMeo.html">Giường ngủ</a>
+                <a class="dropdown-item" href="./khayVeSinh.html">Khay vệ sinh</a>
+                <a class="dropdown-item" href="./catVeSinh.html">Cát vệ sinh</a>
+                <a class="dropdown-item" href="./doChoiChoMeo.html">Đồ chơi</a>
+                <a class="dropdown-item" href="./chamSocLong.html">Vật dụng chăm sóc lông</a>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="nav-item">
+          <div class="nav-link">
+            <div class="dropdown">
+              <span data-toggle="dropdown" class="font-weight-bold">Phụ kiện</span>
+              <i class="fa-solid fa-caret-down"></i>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Quần áo</a>
+                <a class="dropdown-item" href="#">Vòng cổ</a>
+                <a class="dropdown-item" href="#">Mũ</a>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="nav-item">
+          <div class="nav-link">
+            <div class="dropdown">
+              <span data-toggle="dropdown" class="font-weight-bold">Thức ăn</span>
+              <i class="fa-solid fa-caret-down"></i>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Súp thưởng cho mèo</a>
+                <a class="dropdown-item" href="#">Thức ăn hạt</a>
+                <a class="dropdown-item" href="#">Pate</a>
+                <a class="dropdown-item" href="#">Dinh dưỡng</a>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="nav-item"><a class="nav-link font-weight-bold" href="">Chăm sóc</a></li>
+        <li class="nav-item">
+          <div class="nav-link">
+            <div class="dropdown">
+              <span data-toggle="dropdown" class="font-weight-bold">Dịch vụ</span>
+              <i class="fa-solid fa-caret-down"></i>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Trông giữ mèo</a>
+                <a class="dropdown-item" href="#">Cắt tỉa, nhuộm lông</a>
+                <a class="dropdown-item" href="#">Tắm massage</a>
+                <a class="dropdown-item" href="#">Cắt móng</a>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="product-ct">
+      <div class="prd-ct">
+          <div class="left-ct">
+              <div id="img1">
+                  <img src="../IMG/meo21.jpeg" alt="">
+              </div>
+              <ul>
+                  <li><a href="#"><img src="../IMG/meo21.jpeg" alt=""></a></li>
+                  <li><a href="#"><img src="../IMG/meo22.jpeg" alt=""></a></li>
+                  <li><a href="#"><img src="../IMG/meo23.jpeg" alt=""></a></li>
+                  <li><a href="#"><img src="../IMG/meo24.jpeg" alt=""></a></li>
+              </ul>
+              <div class="note-l">
+                  <p>Nếu gặp vấn đề xin hãy báo cáo tin đăng hoặc liên hệ CSKH để được trợ giúp</p>
+              </div>
+              <button>Báo cáo tin</button>
+          </div>
+          <div class="right-ct">
+              <h3>[BÁN] Mèo ALN THUẦN CHỦNG</h3>
+              <button class="bt-1"><i class="fa-solid fa-thumbs-up"></i>Like</button>
+              <button class="bt-1"><i class="fa-solid fa-share"></i>Share</button>
+              <br>
+              <p class="info">Đăng bán 16 giờ trước.</p>
+              <br>
+              <p class="info">Mã đơn hàng : ABC13355</p>
+              <br>
+              <p class="price">Giá bán : 3.000.000 đ</p>
+              <br>
+              <button class="contact"><i class="fa-solid fa-phone"></i> Liên Hệ Shop</button>
+              <button class="contact"><i class="fa-solid fa-comment-sms"></i> Chat Với Shop</button>
+              <div class="info-shop">
+                  <img src="../IMG/m1.jpg" alt="">
+                  <button>Xem trang</button>
+              </div>
+              <div class="address">
+                  <p><i class="fa-solid fa-location-dot"></i>   Số 14, Nguyễn Văn Bảo,P4,GV,TPHCM</p>
+              </div>
+              <h5>Thông tin chi tiết : </h5>
+              <div class="box-info">
+                  <div class="in-left">
+                      <p>Giống :</p>
+                      <p>Giới Tính :</p>
+                      <p>Tuổi :</p>
+                      <p>Đã tiêm chủng :</p>
+                      <p>Bảo hành sức khỏe :</p>
+                  </div>
+                  <div class="in-right">
+                      <p>Mèo ALN THUẦN CHỦNG</p>
+                      <p>Không rõ</p>
+                      <p>Từ 60 ngày tới 1 tuổi</p>
+                      <p>Có</p>
+                      <p>Có</p>
+                  </div>
+              </div>
+              <div class="add-info">
+                  <h5> <i class="fa-solid fa-list"></i> Mô tả thêm :</h5>
+                  <p>Tìm nhà mới cho bé đực nhà mình <br>
+                      Bé giống : Xám xanh, mèo ALN thuần chủng 100% <br>
+                      Bé được 3 tháng tuổi. <br>
+                      Bé ăn hạt,pate khoẻ,…. <br>
+                      Đã sổ giun định kì, đảm bảo không nấm, rận, mèo nhà nuôi nên mình cho ăn đồ bổ, sạch sẽ với chăm kĩ lắm ạ. Bé còn quấn chủ dễ thương lắm luôn. <br>
+                      WC đúng thau cát,quấn chủ ,ngoan cực luôn ạ <br>
+                      Anh/ chị đến xem trực tiếp cho dễ, bé ở ngoài xinh hơn trong hình ạ, <br>
+                      A/c đến xem thử ưng thì bắt k ưng thì thôi k sao ạ, hoặc a/c nào ở xa, bận k qua xem được thì mình có thể ship tận nơi, nhận được mèo mình mới nhận tiền  ( miễn phí ship trong khu vực HCM- Bình Dương- Đồng Nai- Củ Chi )</p>
+              </div>
+          </div>
+      </div>
+    </div>
+    <div class="md:container-fluid lg:container-fluid">
+      <div class="container">
+        <div class="pho-bien rounded p-2 mt-5">
+          <p class="title">Phổ biến nhất</p>
+          <div class="d-flex overflow">
+            <div class="col col-6 col-md-4 col-lg-2 p-1">
+              <div class="meow-item bg-white p-1">
+                <a href="product1.html">
+                  <div
+                    style="height: 200px"
+                    class="d-flex justify-content-center"
+                  >
+                    <img src="../IMG/m1.jpg" alt="" width="100%" />
+                  </div>
+                  <div class="mt-2">
+                    <h6>Mèo Anh Lông Ngắn</h6>
+                  </div>
+                </a>
+                <div class="price">
+                  <strong>4.000.000₫</strong>
+                </div>
+                <div class="d-flex justify-content-between p-2">
+                  <i class="far fa-heart"></i>
+                  <i class="fas fa-shopping-cart"></i>
+                  <i class="fas fa-plus"></i>
+                </div>
+              </div>
+            </div>
+            <div class="col col-6 col-md-4 col-lg-2 p-1">
+              <div class="meow-item bg-white p-1">
+                <a href="product.html">
+                  <div
+                    style="height: 200px"
+                    class="d-flex justify-content-center"
+                  >
+                    <img src="../IMG/m2.jpg" alt="" width="100%" />
+                  </div>
+                  <div class="mt-2">
+                    <h6>Mèo Anh Lông Ngắn</h6>
+                  </div>
+                </a>
+                <div class="price">
+                  <strong>4.000.000₫</strong>
+                </div>
+                <div class="d-flex justify-content-between p-2">
+                  <i class="far fa-heart"></i>
+                  <i class="fas fa-shopping-cart"></i>
+                  <i class="fas fa-plus"></i>
+                </div>
+              </div>
+            </div>
+            <div class="col col-6 col-md-4 col-lg-2 p-1">
+              <div class="meow-item bg-white p-1">
+                <a href="product1.html">
+                  <div
+                    style="height: 200px"
+                    class="d-flex justify-content-center"
+                  >
+                    <img src="../IMG/m3.jpg" alt="" width="100%" />
+                  </div>
+                  <div class="mt-2">
+                    <h6>Mèo Anh Lông Ngắn</h6>
+                  </div>
+                </a>
+                <div class="price">
+                  <strong>4.000.000₫</strong>
+                </div>
+                <div class="d-flex justify-content-between p-2">
+                  <i class="far fa-heart"></i>
+                  <i class="fas fa-shopping-cart"></i>
+                  <i class="fas fa-plus"></i>
+                </div>
+              </div>
+            </div>
+            <div class="col col-6 col-md-4 col-lg-2 p-1">
+              <div class="meow-item bg-white p-1">
+                <a href="product1.html">
+                  <div
+                    style="height: 200px"
+                    class="d-flex justify-content-center"
+                  >
+                    <img src="../IMG/m4.jpg" alt="" width="100%" />
+                  </div>
+                  <div class="mt-2">
+                    <h6>Mèo Anh Lông Ngắn</h6>
+                  </div>
+                </a>
+                <div class="price">
+                  <strong>4.000.000₫</strong>
+                </div>
+                <div class="d-flex justify-content-between p-2">
+                  <i class="far fa-heart"></i>
+                  <i class="fas fa-shopping-cart"></i>
+                  <i class="fas fa-plus"></i>
+                </div>
+              </div>
+            </div>
+            <div class="col col-6 col-md-4 col-lg-2 p-1">
+              <div class="meow-item bg-white p-1">
+                <a href="product1.html">
+                  <div
+                    style="height: 200px"
+                    class="d-flex justify-content-center"
+                  >
+                    <img src="../IMG/meo21.jpeg" alt="" width="100%" />
+                  </div>
+                  <div class="mt-2">
+                    <h6>Mèo Anh Lông Ngắn</h6>
+                  </div>
+                </a>
+                <div class="price">
+                  <strong>4.000.000₫</strong>
+                </div>
+                <div class="d-flex justify-content-between p-2">
+                  <i class="far fa-heart"></i>
+                  <i class="fas fa-shopping-cart"></i>
+                  <i class="fas fa-plus"></i>
+                </div>
+              </div>
+            </div>
+            <div class="col col-6 col-md-4 col-lg-2 p-1">
+              <div class="meow-item bg-white p-1">
+                <a href="product1.html">
+                  <div
+                    style="height: 200px"
+                    class="d-flex justify-content-center"
+                  >
+                    <img src="../IMG/meo33.jpg" alt="" width="100%" />
+                  </div>
+                  <div class="mt-2">
+                    <h6>Mèo Anh Lông Ngắn</h6>
+                  </div>
+                </a>
+                <div class="price">
+                  <strong>4.000.000₫</strong>
+                </div>
+                <div class="d-flex justify-content-between p-2">
+                  <i class="far fa-heart"></i>
+                  <i class="fas fa-shopping-cart"></i>
+                  <i class="fas fa-plus"></i>
+                </div>
+              </div>
+            </div>
+            <div class="col col-6 col-md-4 col-lg-2 p-1">
+              <div class="meow-item bg-white p-1">
+                <a href="product1.html">
+                  <div
+                    style="height: 200px"
+                    class="d-flex justify-content-center"
+                  >
+                    <img src="../IMG/meow1.jpg" alt="" width="100%" />
+                  </div>
+                  <div class="mt-2">
+                    <h6>Mèo Anh Lông Ngắn</h6>
+                  </div>
+                </a>
+                <div class="price">
+                  <strong>4.000.000₫</strong>
+                </div>
+                <div class="d-flex justify-content-between p-2">
+                  <i class="far fa-heart"></i>
+                  <i class="fas fa-shopping-cart"></i>
+                  <i class="fas fa-plus"></i>
+                </div>
+              </div>
+            </div>
+            <div class="col col-6 col-md-4 col-lg-2 p-1">
+              <div class="meow-item bg-white p-1">
+                <a href="product1.html">
+                  <div
+                    style="height: 200px"
+                    class="d-flex justify-content-center"
+                  >
+                    <img src="../IMG/meo32.jpg" alt="" width="100%" />
+                  </div>
+                  <div class="mt-2">
+                    <h6>Mèo Anh Lông Ngắn</h6>
+                  </div>
+                </a>
+                <div class="price">
+                  <strong>4.000.000₫</strong>
+                </div>
+                <div class="d-flex justify-content-between p-2">
+                  <i class="far fa-heart"></i>
+                  <i class="fas fa-shopping-cart"></i>
+                  <i class="fas fa-plus"></i>
+                </div>
+              </div>
+            </div>
+            <div class="col col-6 col-md-4 col-lg-2 p-1">
+              <div class="meow-item bg-white p-1">
+                <a href="product1.html">
+                  <div
+                    style="height: 200px"
+                    class="d-flex justify-content-center"
+                  >
+                    <img src="../IMG/meo23.jpeg" alt="" width="100%" />
+                  </div>
+                  <div class="mt-2">
+                    <h6>Mèo Anh Lông Ngắn</h6>
+                  </div>
+                </a>
+                <div class="price">
+                  <strong>4.000.000₫</strong>
+                </div>
+                <div class="d-flex justify-content-between p-2">
+                  <i class="far fa-heart"></i>
+                  <i class="fas fa-shopping-cart"></i>
+                  <i class="fas fa-plus"></i>
+                </div>
+              </div>
+            </div>
+            <div class="col col-6 col-md-4 col-lg-2 p-1">
+              <div class="meow-item bg-white p-1">
+                <a href="product1.html">
+                  <div
+                    style="height: 200px"
+                    class="d-flex justify-content-center"
+                  >
+                    <img src="../IMG/m1.jpg" alt="" width="100%" />
+                  </div>
+                  <div class="mt-2">
+                    <h6>Mèo Anh Lông Ngắn</h6>
+                  </div>
+                </a>
+                <div class="price">
+                  <strong>4.000.000₫</strong>
+                </div>
+                <div class="d-flex justify-content-between p-2">
+                  <i class="far fa-heart"></i>
+                  <i class="fas fa-shopping-cart"></i>
+                  <i class="fas fa-plus"></i>
+                </div>
+              </div>
+            </div>
+            <div class="col col-6 col-md-4 col-lg-2 p-1">
+              <div class="meow-item bg-white p-1">
+                <a href="product1.html">
+                  <div
+                    style="height: 200px"
+                    class="d-flex justify-content-center"
+                  >
+                    <img src="../IMG/meow2.jpg" alt="" width="100%" />
+                  </div>
+                  <div class="mt-2">
+                    <h6>Mèo Anh Lông Ngắn</h6>
+                  </div>
+                </a>
+                <div class="price">
+                  <strong>4.000.000₫</strong>
+                </div>
+                <div class="d-flex justify-content-between p-2">
+                  <i class="far fa-heart"></i>
+                  <i class="fas fa-shopping-cart"></i>
+                  <i class="fas fa-plus"></i>
+                </div>
+              </div>
+            </div>
+            <div class="col col-3 col-lg-2 p-1 d-flex align-items-center">
+              <div class="meow-item bg-white p-1 d-flex align-items-center rounded-circle border border-solid border-danger"  style="height: 30%;">
+                <div class=""><a href="" class="align-center d-block">Xem thêm >></a></div>
+              </div>
+            </div>
+          </div>
+          <div class="d-flex justify-content-center align-center mt-2 mb-1">
+            <div class="shop-title pb-2">ShopMeow</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="md:container-fluid lg:container-fluid">
+      <div class="container">
+        <div class="tin-noi-bat rounded p-2">
+          <p class="title">Tin nổi bật</p>
+          <div class="row px-2">
+            <div class="col col-6 col-md-4 col-lg-2 p-1">
+              <div class="meow-item bg-white p-1">
+                <a href="product1.html">
+                  <div
+                    style="height: 200px; width: 100%"
+                    class="d-flex align-center"
+                  >
+                    <img src="../IMG/m1.jpg" alt="" width="100%" />
+                  </div>
+                  <div class="mt-2">
+                    <h6>Mèo Anh Lông Ngắn</h6>
+                  </div>
+                </a>
+                <div class="price">
+                  <strong>4.000.000₫</strong>
+                </div>
+                <div class="d-flex justify-content-between p-2">
+                  <i class="far fa-heart"></i>
+                  <i class="fas fa-shopping-cart"></i>
+                  <i class="fas fa-plus"></i>
+                </div>
+              </div>
+            </div>
+            <div class="col col-6 col-md-4 col-lg-2 p-1">
+              <div class="meow-item bg-white p-1">
+                <a href="product2.html">
+                  <div
+                    style="height: 200px; width: 100%"
+                    class="d-flex align-center"
+                  >
+                    <img src="../IMG/m2.jpg" alt="" width="100%" />
+                  </div>
+                  <div class="mt-2">
+                    <h6>Mèo Anh Lông Ngắn</h6>
+                  </div>
+                </a>
+                <div class="price">
+                  <strong>4.000.000₫</strong>
+                </div>
+                <div class="d-flex justify-content-between p-2">
+                  <i class="far fa-heart"></i>
+                  <i class="fas fa-shopping-cart"></i>
+                  <i class="fas fa-plus"></i>
+                </div>
+              </div>
+            </div>
+            <div class="col col-6 col-md-4 col-lg-2 p-1">
+              <div class="meow-item bg-white p-1">
+                <a href="product1.html">
+                  <div
+                    style="height: 200px; width: 100%"
+                    class="d-flex align-center"
+                  >
+                    <img src="../IMG/m3.jpg" alt="" width="100%" />
+                  </div>
+                  <div class="mt-2">
+                    <h6>Mèo Anh Lông Ngắn</h6>
+                  </div>
+                </a>
+                <div class="price">
+                  <strong>4.000.000₫</strong>
+                </div>
+                <div class="d-flex justify-content-between p-2">
+                  <i class="far fa-heart"></i>
+                  <i class="fas fa-shopping-cart"></i>
+                  <i class="fas fa-plus"></i>
+                </div>
+              </div>
+            </div>
+            <div class="col col-6 col-md-4 col-lg-2 p-1">
+              <div class="meow-item bg-white p-1">
+                <a href="product1.html">
+                  <div
+                    style="height: 200px; width: 100%"
+                    class="d-flex align-center"
+                  >
+                    <img src="../IMG/m4.jpg" alt="" width="100%" />
+                  </div>
+                  <div class="mt-2">
+                    <h6>Mèo Anh Lông Ngắn</h6>
+                  </div>
+                </a>
+                <div class="price">
+                  <strong>4.000.000₫</strong>
+                </div>
+                <div class="d-flex justify-content-between p-2">
+                  <i class="far fa-heart"></i>
+                  <i class="fas fa-shopping-cart"></i>
+                  <i class="fas fa-plus"></i>
+                </div>
+              </div>
+            </div>
+            <div class="col col-6 col-md-4 col-lg-2 p-1">
+              <div class="meow-item bg-white p-1">
+                <a href="product1.html">
+                  <div
+                    style="height: 200px; width: 100%"
+                    class="d-flex align-center"
+                  >
+                    <img src="../IMG/meo21.jpeg" alt="" width="100%" />
+                  </div>
+                  <div class="mt-2">
+                    <h6>Mèo Anh Lông Ngắn</h6>
+                  </div>
+                </a>
+                <div class="price">
+                  <strong>4.000.000₫</strong>
+                </div>
+                <div class="d-flex justify-content-between p-2">
+                  <i class="far fa-heart"></i>
+                  <i class="fas fa-shopping-cart"></i>
+                  <i class="fas fa-plus"></i>
+                </div>
+              </div>
+            </div>
+            <div class="col col-6 col-md-4 col-lg-2 p-1">
+              <div class="meow-item bg-white p-1">
+                <a href="product1.html">
+                  <div
+                    style="height: 200px; width: 100%"
+                    class="d-flex align-center"
+                  >
+                    <img src="../IMG/meo33.jpg" alt="" width="100%" />
+                  </div>
+                  <div class="mt-2">
+                    <h6>Mèo Anh Lông Ngắn</h6>
+                  </div>
+                </a>
+                <div class="price">
+                  <strong>4.000.000₫</strong>
+                </div>
+                <div class="d-flex justify-content-between p-2">
+                  <i class="far fa-heart"></i>
+                  <i class="fas fa-shopping-cart"></i>
+                  <i class="fas fa-plus"></i>
+                </div>
+              </div>
+            </div>
+            <div class="col col-6 col-md-4 col-lg-2 p-1">
+              <div class="meow-item bg-white p-1">
+                <a href="product1.html">
+                  <div
+                    style="height: 200px; width: 100%"
+                    class="d-flex align-center"
+                  >
+                    <img src="../IMG/meow1.jpg" alt="" width="100%" />
+                  </div>
+                  <div class="mt-2">
+                    <h6>Mèo Anh Lông Ngắn</h6>
+                  </div>
+                </a>
+                <div class="price">
+                  <strong>4.000.000₫</strong>
+                </div>
+                <div class="d-flex justify-content-between p-2">
+                  <i class="far fa-heart"></i>
+                  <i class="fas fa-shopping-cart"></i>
+                  <i class="fas fa-plus"></i>
+                </div>
+              </div>
+            </div>
+            <div class="col col-6 col-md-4 col-lg-2 p-1">
+              <div class="meow-item bg-white p-1">
+                <a href="product1.html">
+                  <div
+                    style="height: 200px; width: 100%"
+                    class="d-flex align-center border-danger"
+                  >
+                    <img src="../IMG/meo32.jpg" alt="" width="100%" />
+                  </div>
+                  <div class="mt-2">
+                    <h6>Mèo Anh Lông Ngắn</h6>
+                  </div>
+                </a>
+                <div class="price">
+                  <strong>4.000.000₫</strong>
+                </div>
+                <div class="d-flex justify-content-between p-2">
+                  <i class="far fa-heart"></i>
+                  <i class="fas fa-shopping-cart"></i>
+                  <i class="fas fa-plus"></i>
+                </div>
+              </div>
+            </div>
+            <div class="col col-6 col-md-4 col-lg-2 p-1">
+              <div class="meow-item bg-white p-1">
+                <a href="product1.html">
+                  <div
+                    style="height: 200px; width: 100%"
+                    class="d-flex align-center border-danger"
+                  >
+                    <img src="../IMG/meo23.jpeg" alt="" width="100%" />
+                  </div>
+                  <div class="mt-2">
+                    <h6>Mèo Anh Lông Ngắn</h6>
+                  </div>
+                </a>
+                <div class="price">
+                  <strong>4.000.000₫</strong>
+                </div>
+                <div class="d-flex justify-content-between p-2">
+                  <i class="far fa-heart"></i>
+                  <i class="fas fa-shopping-cart"></i>
+                  <i class="fas fa-plus"></i>
+                </div>
+              </div>
+            </div>
+            <div class="col col-6 col-md-4 col-lg-2 p-1">
+              <div class="meow-item bg-white p-1">
+                <a href="product1.html">
+                  <div
+                    style="height: 200px; width: 100%"
+                    class="d-flex align-center border-danger"
+                  >
+                    <img src="../IMG/m1.jpg" alt="" width="100%" />
+                  </div>
+                  <div class="mt-2">
+                    <h6>Mèo Anh Lông Ngắn</h6>
+                  </div>
+                </a>
+                <div class="price">
+                  <strong>4.000.000₫</strong>
+                </div>
+                <div class="d-flex justify-content-between p-2">
+                  <i class="far fa-heart"></i>
+                  <i class="fas fa-shopping-cart"></i>
+                  <i class="fas fa-plus"></i>
+                </div>
+              </div>
+            </div>
+            <div class="col col-6 col-md-4 col-lg-2 p-1">
+              <div class="meow-item bg-white p-1">
+                <a href="product1.html">
+                  <div
+                    style="height: 200px; width: 100%"
+                    class="d-flex align-center border-danger"
+                  >
+                    <img src="../IMG/meow2.jpg" alt="" width="100%" />
+                  </div>
+                  <div class="mt-2">
+                    <h6>Mèo Anh Lông Ngắn</h6>
+                  </div>
+                </a>
+                <div class="price">
+                  <strong>4.000.000₫</strong>
+                </div>
+                <div class="d-flex justify-content-between p-2">
+                  <i class="far fa-heart"></i>
+                  <i class="fas fa-shopping-cart"></i>
+                  <i class="fas fa-plus"></i>
+                </div>
+              </div>
+            </div>
+            <div class="col col-6 col-md-4 col-lg-2 p-1">
+              <div class="meow-item bg-white p-1">
+                <a href="product1.html">
+                  <div
+                    style="height: 200px; width: 100%"
+                    class="d-flex align-center border-danger"
+                  >
+                    <img src="../IMG/meo22.jpeg" alt="" width="100%" />
+                  </div>
+                  <div class="mt-2">
+                    <h6>Mèo Anh Lông Ngắn</h6>
+                  </div>
+                </a>
+                <div class="price">
+                  <strong>4.000.000₫</strong>
+                </div>
+                <div class="d-flex justify-content-between p-2">
+                  <i class="far fa-heart"></i>
+                  <i class="fas fa-shopping-cart"></i>
+                  <i class="fas fa-plus"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="d-flex justify-content-center align-center mt-2 mb-1">
+            <a href="" class="py-2 px-5 mx-auto bg-white">
+              <span>Xem thêm</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="fixed-bottom-right">
+      <a href="gioHang.html" class="cart badge" value="5">
+        <div class="cart-content d-flex align-items-center justify-content-center rounded-circle"
+         style="background: #ffe66b; width: 50px; height: 50px;" >
+          <i class="fas fa-cart-arrow-down" style="font-size: 20px"></i>
+        </div>
+      </a>
+      <div class="chat">
+        <span class="dot">
+            <i class="fas fa-comment-dots text-center position-absolute" style="left: 25px; bottom: 25%"></i>
+            <div class="animation"></div>
+          </span>
+      </div>
+    </div>
+    <footer class="mt-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-6 col-lg-3 py-2">
+            <address>
+              <h6>THÀNH VIÊN NHÓM 10</h5>
+              <ul class="p-0">
+                <li class="list-unstyled">Bùi Thị Yến Yến</li>
+                <li class="list-unstyled">Phạm Nhật Linh</li>
+                <li class="list-unstyled">Võ Nguyễn Thanh Tú</li>
+                <li class="list-unstyled">Phan Hoài An</li>
+                <li class="list-unstyled">Nguyễn Thị Lê</li>
+              </ul>
+            </address>
+          </div>
+          <div class="col-6 col-lg-3 py-2">
+            <h6>HỖ TRỢ KHÁCH HÀNG</h6>
+            <ul class="p-0">
+              <li class="list-unstyled"><a href="#">Hướng dẫn mua hàng</a></li>
+              <li class="list-unstyled">
+                <a href="#">Điều khoản và điều kiện</a>
+              </li>
+              <li class="list-unstyled"><a href="#">Chính sách bảo mật</a></li>
+              <li class="list-unstyled">
+                <a href="#">Chính sách thanh toán</a>
+              </li>
+              <li class="list-unstyled">
+                <a href="#">Chính sách giao hàng</a>
+              </li>
+              <li class="list-unstyled"><a href="#">Chính sách đổi trả</a></li>
+              <li class="list-unstyled">
+                <a href="#">Hướng dẫn gửi trả hàng</a>
+              </li>
+              <li class="list-unstyled"><a href="#">Chất lượng dịch vụ</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-lg-3 py-2">
+            <h6>VỀ CHÚNG TÔI</h6>
+            <ul class="p-0">
+              <li class="list-unstyled"><a href="#">Giới thiệu</a></li>
+              <li class="list-unstyled"><a href="#">Các chi nhánh</a></li>
+              <li class="list-unstyled">Thông tin liên hệ</li>
+              <li class="list-unstyled"><a href="#"><img src="../IMG/chungnhan.png" alt=""></a></li>
+              <li class="list-unstyled"><a href="#"><img src="../IMG/cn.png" alt=""></a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-lg-3 py-2">
+            <h6>MẠNG XÃ HỘI</h6>
+            <ul class="p-0">
+              <li class="list-unstyled"><a href="https://www.facebook.com/profile.php?id=100071514624751"><i
+                    class="fa-brands fa-facebook"></i>
+                  Facebook</a></li>
+              <li class="list-unstyled"><a href="https://www.youtube.com/channel/UCWbyLwnl-Bjdd8gqQsGhy7A"><i
+                    class="fa-brands fa-youtube"></i>
+                  Youtube</a></li>
+              <li class="list-unstyled"><a href="https://www.tiktok.com/@h_u_eee"><i class="fa-brands fa-tiktok"></i> Tiktok</a></li>
+              <li class="list-unstyled"><a href="https://www.instagram.com/shop_meow_meow/"><i class="fa-brands fa-instagram-square"></i>
+                  Instagram</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="copyright text-center p-1 d-none d-md-block" style="background:#000; color:#fff">
+        <p class="m-0">Project SHOPMEOW - Bộ môn HỆ THỐNG CÔNG NGHỆ WEB - HK II (2021-2022)</p>
+        <p class="m-0">Địa chỉ: Trường Đại học Công Nghiệp (IUH), 12 Nguyễn Văn Bảo, phường 04, quận Gò Vấp, TP.HCM</p>
+        <p class="m-0">Bản quyền thuộc về nhóm 10 - Lớp: DHCNTT16A - 420300214503</p>
+        <p class="m-0">Email: hotroshopmoew@gmail.com - Hotline: 0123456789</p>
+      </div>
+    </footer>
+</body>
+</html>

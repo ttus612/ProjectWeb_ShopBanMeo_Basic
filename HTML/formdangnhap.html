@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/home.css">
+    <link rel="stylesheet" href="../Icon/fontawesome-free-6.0.0-beta2-web/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>Đăng Nhập</title>
+    <style>
+        .row {
+          min-width: 85%;
+        }
+        .container {
+          display: flex;
+          justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar py-0 position-sm-relative">
+        <ul id="navbar" class="nav d-none d-md-flex container">
+            <li class="nav-item">
+                <div class="nav-link" href="">
+                  <div class="dropdown">
+                    <span class="font-weight-bold"><a href="home1.html">Trang Chủ</a></span>
+                  </div>
+                </div>
+            </li>
+          <li class="nav-item">
+            <div class="nav-link" href="">
+              <div class="dropdown">
+                <span data-toggle="dropdown" class="font-weight-bold">Giống mèo</span>
+                <i class="fa-solid fa-caret-down"></i>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="./meobatu.html"
+                    >Mèo Ba Tư (Persian Longhair)</a
+                  >
+                  <a class="dropdown-item" href="./meoanhlongngan.html">Mèo Anh lông ngắn</a>
+                  <a class="dropdown-item" href="./meoanhlongdai.html">Mèo Anh lông dài</a>
+                  <a class="dropdown-item" href="./meomunchkin.html">Mèo Mucnhkin</a>
+                  <a class="dropdown-item" href="./meoScottish.html">Mèo Scottish tai cụp</a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item">
+            <div class="nav-link" href="">
+              <div class="dropdown">
+                <span data-toggle="dropdown" class="font-weight-bold">Vật dụng</span>
+                <i class="fa-solid fa-caret-down"></i>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="./giuongNguChoMeo.html">Giường ngủ</a>
+                  <a class="dropdown-item" href="./khayVeSinh.html">Khay vệ sinh</a>
+                  <a class="dropdown-item" href="./catVeSinh.html">Cát vệ sinh</a>
+                  <a class="dropdown-item" href="./doChoiChoMeo.html">Đồ chơi</a>
+                  <a class="dropdown-item" href="./chamSocLong.html">Vật dụng chăm sóc lông</a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item">
+            <div class="nav-link">
+              <div class="dropdown">
+                <span data-toggle="dropdown" class="font-weight-bold">Phụ kiện</span>
+                <i class="fa-solid fa-caret-down"></i>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#">Quần áo</a>
+                  <a class="dropdown-item" href="#">Vòng cổ</a>
+                  <a class="dropdown-item" href="#">Mũ</a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item">
+            <div class="nav-link">
+              <div class="dropdown">
+                <span data-toggle="dropdown" class="font-weight-bold">Thức ăn</span>
+                <i class="fa-solid fa-caret-down"></i>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#">Súp thưởng cho mèo</a>
+                  <a class="dropdown-item" href="#">Thức ăn hạt</a>
+                  <a class="dropdown-item" href="#">Pate</a>
+                  <a class="dropdown-item" href="#">Dinh dưỡng</a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item"><a class="nav-link font-weight-bold" href="">Chăm sóc</a></li>
+          <li class="nav-item">
+            <div class="nav-link">
+              <div class="dropdown">
+                <span data-toggle="dropdown" class="font-weight-bold">Dịch vụ</span>
+                <i class="fa-solid fa-caret-down"></i>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#">Trông giữ mèo</a>
+                  <a class="dropdown-item" href="#">Cắt tỉa, nhuộm lông</a>
+                  <a class="dropdown-item" href="#">Tắm massage</a>
+                  <a class="dropdown-item" href="#">Cắt móng</a>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    <div class="box-login">
+        <div class="container">
+            <div class="left-gif">
+                <img src="../IMG/footer_gif.gif" alt="" />
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+    
+                    <h4 style="margin: 30px 0px;">ĐĂNG NHẬP TÀI KHOẢN</h4>
+    
+                    <form action="" method="" name="register" onsubmit="return FormValidate();">
+                          <div class="form-row">
+                            <div class="form-group col-md-12">
+                              <label for="email">Email <span style="color: red;" id="erorEmail">(*)</span></label>
+                              <input type="text" name="email" class="form-control" id="email" />
+                            </div>
+                          </div>
+    
+                          <div class="form-row">
+                            <div class="form-group col-md-12">
+                              <label for="pass">Mật khẩu <span style="color: red;" id="errorPass">(*)</span></label>
+                              <input type="password" name="passw" class="form-control" id="pass" />
+                            </div>
+                          </div>
+                      <button type="submit" class="btn btn-primary">Đăng Nhập</button>
+                      <button type="reset" class="btn btn-danger">Xóa thông tin</button>
+                      <button type="button" class="btn btn-primary"><a href="formdangki.html" style="color: antiquewhite; text-decoration: none;">Đăng Kí</a></button>
+                    </form>
+                </div>
+            </div>
+            <div class="left-gif-bottom">
+                <img src="../IMG/footer_gif.gif" alt="" />
+              </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script>
+        function FormValidate(){
+			var email = document.getElementById('email').value;
+			var errorEmail = document.getElementById('erorEmail');
+			var reGexEmail = /[A-Z0-9._%+-]+@[A-Z0-9-]+.+.[A-Z]{2,4}/igm;
+			if (email == '' || email == null) {
+				errorEmail.innerHTML = "Email không được để trống!";
+			}else if(!reGexEmail.test(email)){
+				errorEmail.innerHTML = "Email không hợp lệ!";
+				email = '';
+			}else{
+				errorEmail.innerHTML = '';
+			}
+
+			var passW = document.getElementById('pass').value;
+			var errorPass = document.getElementById('errorPass');
+			if (passW == '' || passW == null) {
+				errorPass.innerHTML = "Mật khẩu vui lòng không để trống!";
+			}else{
+				errorPass.innerHTML = "";
+			}
+			if (email && passW ) {
+				window.location.href= "home2.html";
+			}else{
+			}
+			return false;
+		}
+    </script>
+    <div class="box_footer">
+        <footer class="mt-5">
+            <div class="container">
+              <div class="row">
+                <div class="col-6 col-lg-3 py-2">
+                  <address>
+                    <h6>THÀNH VIÊN NHÓM 10</h5>
+                    <ul class="p-0">
+                      <li class="list-unstyled">Bùi Thị Yến Yến</li>
+                      <li class="list-unstyled">Phạm Nhật Linh</li>
+                      <li class="list-unstyled">Võ Nguyễn Thanh Tú</li>
+                      <li class="list-unstyled">Phan Hoài An</li>
+                      <li class="list-unstyled">Nguyễn Thị Lê</li>
+                    </ul>
+                  </address>
+                </div>
+                <div class="col-6 col-lg-3 py-2">
+                  <h6>HỖ TRỢ KHÁCH HÀNG</h6>
+                  <ul class="p-0">
+                    <li class="list-unstyled"><a href="#">Hướng dẫn mua hàng</a></li>
+                    <li class="list-unstyled">
+                      <a href="#">Điều khoản và điều kiện</a>
+                    </li>
+                    <li class="list-unstyled"><a href="#">Chính sách bảo mật</a></li>
+                    <li class="list-unstyled">
+                      <a href="#">Chính sách thanh toán</a>
+                    </li>
+                    <li class="list-unstyled">
+                      <a href="#">Chính sách giao hàng</a>
+                    </li>
+                    <li class="list-unstyled"><a href="#">Chính sách đổi trả</a></li>
+                    <li class="list-unstyled">
+                      <a href="#">Hướng dẫn gửi trả hàng</a>
+                    </li>
+                    <li class="list-unstyled"><a href="#">Chất lượng dịch vụ</a></li>
+                  </ul>
+                </div>
+                <div class="col-6 col-lg-3 py-2">
+                  <h6>VỀ CHÚNG TÔI</h6>
+                  <ul class="p-0">
+                    <li class="list-unstyled"><a href="#">Giới thiệu</a></li>
+                    <li class="list-unstyled"><a href="#">Các chi nhánh</a></li>
+                    <li class="list-unstyled">Thông tin liên hệ</li>
+                    <li class="list-unstyled"><a href="#"><img src="../IMG/chungnhan.png" alt=""></a></li>
+                    <li class="list-unstyled"><a href="#"><img src="../IMG/cn.png" alt=""></a></li>
+                  </ul>
+                </div>
+                <div class="col-6 col-lg-3 py-2">
+                  <h6>MẠNG XÃ HỘI</h6>
+                  <ul class="p-0">
+                    <li class="list-unstyled"><a href="https://www.facebook.com/profile.php?id=100071514624751"><i
+                          class="fa-brands fa-facebook"></i>
+                        Facebook</a></li>
+                    <li class="list-unstyled"><a href="https://www.youtube.com/channel/UCWbyLwnl-Bjdd8gqQsGhy7A"><i
+                          class="fa-brands fa-youtube"></i>
+                        Youtube</a></li>
+                    <li class="list-unstyled"><a href="https://www.tiktok.com/@h_u_eee"><i class="fa-brands fa-tiktok"></i> Tiktok</a></li>
+                    <li class="list-unstyled"><a href="https://www.instagram.com/shop_meow_meow/"><i class="fa-brands fa-instagram-square"></i>
+                        Instagram</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="copyright text-center p-1 d-none d-md-block" style="background:#000; color:#fff">
+              <p class="m-0">Project SHOPMEOW - Bộ môn HỆ THỐNG CÔNG NGHỆ WEB - HK II (2021-2022)</p>
+              <p class="m-0">Địa chỉ: Trường Đại học Công Nghiệp (IUH), 12 Nguyễn Văn Bảo, phường 04, quận Gò Vấp, TP.HCM</p>
+              <p class="m-0">Bản quyền thuộc về nhóm 10 - Lớp: DHCNTT16A - 420300214503</p>
+              <p class="m-0">Email: hotroshopmoew@gmail.com - Hotline: 0123456789</p>
+            </div>
+          </footer>
+</body>
+</html>

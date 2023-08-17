@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+
+        <head>
+                <meta charset="UTF-8" />
+                <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+                <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+                <title>Document</title>
+                <link rel="stylesheet" href="../CSS/home.css" />
+                <!-- boostrap -->
+                <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" />
+                <!-- Dùng cho dropdown -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+                <!-- font ansome -->
+                <link href="https://use.fontawesome.com/releases/v6.1.1/css/all.css" rel="stylesheet" />
+        </head>
+
+        <body style="background: rgb(235, 234, 234)">
+                <header class="container-fluid">
+                        <div class="container" style="height: 60px;">
+                          <div
+                            class="headbar d-flex py-2 justify-content-between align-items-center" style="height: 100%;"
+                          >
+                            <a href="home2.html" class="logo mr-1" style="height: 100%;">
+                              <img src="../IMG/logo.jpg" alt="" class=" d-none d-sm-block" style="height: 100%;"/>
+                            </a>
+                            <div
+                              class="search-bar d-flex bg-light justify-content-between align-items-center"
+                            >
+                              <input
+                                type="text"
+                                placeholder="Tìm kiếm trên ShopMeow"
+                                class="p-2"
+                              />
+                              <div class="search-button p-1 w-sm-100%">
+                                <div class="d-none d-sm-block d-lg-block btn btn-success">
+                                  <span class="d-none d-md-none d-lg-block">Tìm kiếm</span>
+                                  <span class="d-none d-sm-block d-lg-none"
+                                    ><i class="fa-solid fa-magnifying-glass"></i
+                                  ></span>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="nav d-md-flex">
+                              <a href="post.html">
+                                <div class="d-none d-md-block p-2">
+                                  <i class="far fa-edit px-2"></i>
+                                  <span class="d-none d-lg-inline-block">Đăng tin</span>
+                                </div>
+                              </a>
+                              <a href="thongBao.html" class="p-2">
+                                <i class="far fa-bell pl-2" value="8"></i>
+                                <span class="d-none d-lg-inline-block">Thông báo</span>
+                              </a>
+                              <div class="dropdown">
+                                <div data-toggle="dropdown" class="d-none d-md-block p-2">
+                                  <i class="far fa-user"></i>
+                                  <span class="d-none d-lg-inline-block" style="cursor:default">Tài khoản</span>
+                                </div>
+                  
+                                <div class="dropdown-menu dropdown-menu-right">
+                                  <a href="profile.html" class="dropdown-item">
+                                    <i class="far fa-user p-2"></i>
+                                    <span class="ml-2">Cá nhân</span>
+                                  </a>
+                                  <a href="formdoimatkhau.html" class="dropdown-item">
+                                    <i class="fas fa-exchange-alt p-2"></i>
+                                    <span class="ml-2">Đổi mật khẩu</span>
+                                  </a>
+                                  <a href="home1.html" class="dropdown-item">
+                                    <i class="fa-solid fa-arrow-right-from-bracket p-2"></i>
+                                    <span class="ml-2">Đăng xuất</span>
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </header>
+                      <div class="navbar py-0 position-sm-relative">
+                        <ul id="navbar" class="nav d-none d-md-flex container">
+                          <li class="nav-item">
+                            <div class="nav-link" href="">
+                              <div class="dropdown">
+                                <span data-toggle="dropdown" class="font-weight-bold">Giống mèo</span>
+                                <i class="fa-solid fa-caret-down"></i>
+                                <div class="dropdown-menu">
+                                  <a class="dropdown-item" href="product1.html"
+                                    >Mèo Ba Tư (Persian Longhair)</a
+                                  >
+                                  <a class="dropdown-item" href="product1.html">Mèo Anh lông ngắn</a>
+                                  <a class="dropdown-item" href="product2.html">Mèo Anh lông dài</a>
+                                  <a class="dropdown-item" href="product3.html">Mèo Mucnhkin</a>
+                                  <a class="dropdown-item" href="product1.html">Mèo Scottish tai cụp</a>
+                                </div>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="nav-item">
+                            <div class="nav-link" href="">
+                              <div class="dropdown">
+                                <span data-toggle="dropdown" class="font-weight-bold">Vật dụng</span>
+                                <i class="fa-solid fa-caret-down"></i>
+                                <div class="dropdown-menu">
+                                  <a class="dropdown-item" href="product3.html">Giường ngủ</a>
+                                  <a class="dropdown-item" href="product2.html">Khay vệ sinh</a>
+                                  <a class="dropdown-item" href="product1.html">Cát vệ sinh</a>
+                                  <a class="dropdown-item" href="product1.html">Đồ chơi</a>
+                                  <a class="dropdown-item" href="product1.html">Vật dụng chăm sóc lông</a>
+                                </div>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="nav-item">
+                            <div class="nav-link">
+                              <div class="dropdown">
+                                <span data-toggle="dropdown" class="font-weight-bold">Phụ kiện</span>
+                                <i class="fa-solid fa-caret-down"></i>
+                                <div class="dropdown-menu">
+                                  <a class="dropdown-item" href="#">Quần áo</a>
+                                  <a class="dropdown-item" href="#">Vòng cổ</a>
+                                  <a class="dropdown-item" href="#">Mũ</a>
+                                </div>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="nav-item">
+                            <div class="nav-link">
+                              <div class="dropdown">
+                                <span data-toggle="dropdown" class="font-weight-bold">Thức ăn</span>
+                                <i class="fa-solid fa-caret-down"></i>
+                                <div class="dropdown-menu">
+                                  <a class="dropdown-item" href="#">Súp thưởng cho mèo</a>
+                                  <a class="dropdown-item" href="#">Thức ăn hạt</a>
+                                  <a class="dropdown-item" href="#">Pate</a>
+                                  <a class="dropdown-item" href="#">Dinh dưỡng</a>
+                                </div>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="nav-item"><a class="nav-link font-weight-bold" href="">Chăm sóc</a></li>
+                          <li class="nav-item">
+                            <div class="nav-link">
+                              <div class="dropdown">
+                                <span data-toggle="dropdown" class="font-weight-bold">Dịch vụ</span>
+                                <i class="fa-solid fa-caret-down"></i>
+                                <div class="dropdown-menu">
+                                  <a class="dropdown-item" href="#">Trông giữ mèo</a>
+                                  <a class="dropdown-item" href="#">Cắt tỉa, nhuộm lông</a>
+                                  <a class="dropdown-item" href="#">Tắm massage</a>
+                                  <a class="dropdown-item" href="#">Cắt móng</a>
+                                </div>
+                              </div>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                <div class="container my-2 p-2" style="background: #fff">
+                        <form action="" class="p-3">
+                                <h3 class="text-center">Đăng bài viết</h3>
+                                <div class="row">
+                                        <div class="col-12 col-lg-6 p-2">
+                                                <label for="loai">Chọn thể loại: </label><br />
+                                                <select name="loai" id="loai" class="border border-solid p-1"
+                                                        style="width:100%; height:40px;" required>
+                                                        <option>Chọn</option>
+                                                        <option value="1">Thú cưng</option>
+                                                        <option value="2">Vật dụng dụng cụ</option>
+                                                        <option value="3">Cát vệ sinh</option>
+                                                        <option value="4">Thức ăn</option>
+                                                </select>
+                                        </div>
+                                        <div class="col-12 col-lg-6 p-2">
+                                                <label for="th">Chọn giống/thương hiệu: </label><br />
+                                                <select name="loai" id="th" class="border border-solid p-1"
+                                                        style="width:100%; height:40px;" required>
+                                                        <option>Chọn</option>
+                                                        <option value="1">Mèo Ba Tư</option>
+                                                        <option value="2">Mèo Anh</option>
+                                                        <option value="3">Cát ABS</option>
+                                                        <option value="4">Cát ABC</option>
+                                                        <option value="5">Pate XYZ</option>
+                                                        <option value="6">Giường gỗ</option>
+                                                        <option value="7">Giường sắt</option>
+                                                        <option value="8">Khác</option>
+                                                </select>
+                                        </div>
+                                        <div class="col-12 p-2">
+                                                <label for="title">Tiêu đề:</label><br />
+                                                <input type="text" name="title" id="title"
+                                                        class="border border-solid px-2"
+                                                        style="width:100%; height:40px;"
+                                                        placeholder="VD: Mèo Anh lông dài thuần chủng 2 tuổi..."
+                                                        required>
+                                        </div>
+                                        <div class="col-12 py-2 px-4">
+                                                <div class="row">
+                                                        <div>
+                                                                <label for="hinh">Hình ảnh(nếu có): </label><br>
+                                                                <input type="file" name="hinh" id="hinh"
+                                                                        class="border border-solid mr-3">
+                                                        </div>
+                                                        <div class="img-data mt-2">
+                                                                <img src="../IMG/default_img.jpg" alt="" width="80"
+                                                                        height="80">
+                                                        </div>
+                                                </div>
+
+
+                                        </div>
+                                        <div class="col-12 col-lg-6 p-2">
+                                                <label for="tuoi">Số tuổi (tháng):</label> <br />
+                                                <input type="number" class="border border-solid px-2"
+                                                        style="width:100%; height:40px;" required>
+                                        </div>
+                                        <div class="col-12 col-lg-6 p-2">
+                                                <p>Tình trạng tiêm chủng:</p>
+                                                <input type="radio" name="tiem" id="chua" value="0">
+                                                <label for="chua">Chưa tiêm chủng</label>
+                                                <div class="d-none d-lg-inline-block" style="width: 20px"></div>
+                                                <input type="radio" name="tiem" id="da" value="1">
+                                                <label for="da">Đã tiêm chủng</label>
+                                        </div>
+                                        <div class="col-12 p-2">
+                                                <label for="description">Mô tả:</label><br />
+                                                <textarea name="description" id="description" cols="unset" rows="10"
+                                                        style="width:100%"></textarea>
+                                        </div>
+                                </div>
+                                <div class="submit text-center">
+                                        <button type="submit" class="btn px-5 font-weight-bold"
+                                                style="background: #f10086; color: #fff">POST</button>
+                                </div>
+                        </form>
+                        <div class="only-mobile d-sm-none fixed-bottom bg-white">
+                                <ul class="nav justify-content-around">
+                                        <li class="nav-item">
+                                                <a href="indexDemo.html" class="nav-link">
+                                                        <i class="fas fa-home"></i>
+                                                </a>
+                                        </li>
+                                        <li class="nav-item">
+                                                <a href="" class="nav-link">
+                                                        <i class="fas fa-file-alt"></i>
+                                                </a>
+                                        </li>
+                                        <li class="nav-item">
+                                                <a href="./post.html" class="nav-link">
+                                                        <i class="fas fa-edit"
+                                                                style="font-size: 20px; color: #ca8f8f"></i>
+                                                </a>
+                                        </li>
+                                        <li class="nav-item">
+                                                <a href="./profile.html" class="nav-link">
+                                                        <i class="fas fa-user"></i>
+                                                </a>
+                                        </li>
+                                </ul>
+                        </div>
+                </div>
+                <div class="fixed-bottom-right">
+                        <a href="gioHang.html" class="cart badge" value="5">
+                          <div class="cart-content d-flex align-items-center justify-content-center rounded-circle"
+                           style="background: #ffe66b; width: 50px; height: 50px;" >
+                            <i class="fas fa-cart-arrow-down" style="font-size: 20px"></i>
+                          </div>
+                        </a>
+                        <div class="chat">
+                          <span class="dot">
+                              <i class="fas fa-comment-dots text-center position-absolute" style="left: 25px; bottom: 25%"></i>
+                              <div class="animation"></div>
+                            </span>
+                        </div>
+                      </div>
+                      <div class="fixed-bottom-right">
+                        <a href="gioHang.html" class="cart badge" value="5">
+                          <div class="cart-content d-flex align-items-center justify-content-center rounded-circle"
+                           style="background: #ffe66b; width: 50px; height: 50px;" >
+                            <i class="fas fa-cart-arrow-down" style="font-size: 20px"></i>
+                          </div>
+                        </a>
+                        <div class="chat">
+                          <span class="dot">
+                              <i class="fas fa-comment-dots text-center position-absolute" style="left: 25px; bottom: 25%"></i>
+                              <div class="animation"></div>
+                            </span>
+                        </div>
+                      </div>
+                <footer>
+                        <div class="container">
+                                <div class="row">
+                                        <div class="col-6 col-lg-3 py-2">
+                                                <address>
+                                                        <h6>THÀNH VIÊN NHÓM 10</h5>
+                                                                <ul class="p-0">
+                                                                        <li class="list-unstyled">Bùi Thị Yến Yến</li>
+                                                                        <li class="list-unstyled">Phạm Nhật Linh</li>
+                                                                        <li class="list-unstyled">Võ Nguyễn Thanh Tú
+                                                                        </li>
+                                                                        <li class="list-unstyled">Phan Hoài An</li>
+                                                                        <li class="list-unstyled">Nguyễn Thị Lê</li>
+                                                                </ul>
+                                                </address>
+                                        </div>
+                                        <div class="col-6 col-lg-3 py-2">
+                                                <h6>HỖ TRỢ KHÁCH HÀNG</h6>
+                                                <ul class="p-0">
+                                                        <li class="list-unstyled"><a href="#">Hướng dẫn mua hàng</a>
+                                                        </li>
+                                                        <li class="list-unstyled">
+                                                                <a href="#">Điều khoản và điều kiện</a>
+                                                        </li>
+                                                        <li class="list-unstyled"><a href="#">Chính sách bảo mật</a>
+                                                        </li>
+                                                        <li class="list-unstyled">
+                                                                <a href="#">Chính sách thanh toán</a>
+                                                        </li>
+                                                        <li class="list-unstyled">
+                                                                <a href="#">Chính sách giao hàng</a>
+                                                        </li>
+                                                        <li class="list-unstyled"><a href="#">Chính sách đổi trả</a>
+                                                        </li>
+                                                        <li class="list-unstyled">
+                                                                <a href="#">Hướng dẫn gửi trả hàng</a>
+                                                        </li>
+                                                        <li class="list-unstyled"><a href="#">Chất lượng dịch vụ</a>
+                                                        </li>
+                                                </ul>
+                                        </div>
+                                        <div class="col-6 col-lg-3 py-2">
+                                                <h6>VỀ CHÚNG TÔI</h6>
+                                                <ul class="p-0">
+                                                        <li class="list-unstyled"><a href="#">Giới thiệu</a></li>
+                                                        <li class="list-unstyled"><a href="#">Các chi nhánh</a></li>
+                                                        <li class="list-unstyled">Thông tin liên hệ</li>
+                                                        <li class="list-unstyled"><a href="#"><img
+                                                                                src="../IMG/chungnhan.png" alt=""></a>
+                                                        </li>
+                                                        <li class="list-unstyled"><a href="#"><img src="../IMG/cn.png"
+                                                                                alt=""></a></li>
+                                                </ul>
+                                        </div>
+                                        <div class="col-6 col-lg-3 py-2">
+                                                <h6>MẠNG XÃ HỘI</h6>
+                                                <ul class="p-0">
+                                                        <li class="list-unstyled"><a
+                                                                        href="https://www.facebook.com/profile.php?id=100071514624751"><i
+                                                                                class="fa-brands fa-facebook"></i>
+                                                                        Facebook</a></li>
+                                                        <li class="list-unstyled"><a
+                                                                        href="https://www.youtube.com/channel/UCWbyLwnl-Bjdd8gqQsGhy7A"><i
+                                                                                class="fa-brands fa-youtube"></i>
+                                                                        Youtube</a></li>
+                                                        <li class="list-unstyled"><a
+                                                                        href="https://www.tiktok.com/@h_u_eee"><i
+                                                                                class="fa-brands fa-tiktok"></i>
+                                                                        Tiktok</a></li>
+                                                        <li class="list-unstyled"><a
+                                                                        href="https://www.instagram.com/shop_meow_meow/"><i
+                                                                                class="fa-brands fa-instagram-square"></i>
+                                                                        Instagram</a></li>
+                                                </ul>
+                                        </div>
+                                </div>
+                        </div>
+                </footer>
+        </body>
+
+</html>
